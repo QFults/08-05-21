@@ -5,38 +5,44 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <style>
-
-    .container {
-      width: 100%;
-      height: 1000px;
-      background-color: rgb(221, 221, 60);
-      display: flex;
-      /* flex-direction: column-reverse */
-      justify-content: space-around;
-      /* align-items: stretch; */
-      flex-wrap: wrap;
-    }
-
-    .thing {
-      width: 200px;
-      height: 200px;
-      background-color: red;
-      color: white;
-      font-size: 50px;
-    }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
 <body>
-  <div class="container">
-    <div class="thing">A</div>
-    <div class="thing">B</div>
-    <div class="thing">C</div>
-    <div class="thing">D</div>
-    <div class="thing">E</div>
-    <div class="thing">F</div>
-    <div class="thing">G</div>
-    <div class="thing">H</div>
+  <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+    <div class="card-header">About Me</div>
+    <div class="card-body">
+      <h5 class="card-title">Quinton Fults</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+      </p>
+    </div>
   </div>
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary">Click Me</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>
